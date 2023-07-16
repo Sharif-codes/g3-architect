@@ -1,0 +1,142 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;700&display=swap');
+
+ * {
+     font-family: 'Lato', sans-serif;
+     font-family: 'Open Sans', sans-serif;
+     font-family: 'Work Sans', sans-serif;
+ }
+
+ header {
+     background-color: rgba(255, 144, 14, 0.10);
+     padding: 10px 150px;
+
+ }
+
+ header>nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .nav-title {
+     color: #131313;
+     font-size: 2.8rem;
+     font-weight: 700;
+ }
+
+ header nav ul {
+     display: flex;
+     list-style: none;
+     gap: 30px;
+ }
+
+ header nav ul li a {
+     text-decoration: none;
+     font-weight: 500;
+     font-size: 1rem;
+
+ }
+
+ .banner>img {
+     width: 100%;
+     padding-top: 20px;
+ }
+
+ .banner-title {
+     font-size: 4rem;
+     font-style: normal;
+     font-weight: 700;
+ }
+
+ .banner-des {
+     color: #727272;
+     font-size: 1rem;
+     font-style: normal;
+     font-weight: 400;
+ }
+
+ .banner-content {
+     text-align: center;
+     max-width: 800px;
+     margin: 0 auto;
+ }
+
+ .btn-primary {
+     border-radius: 5px;
+     background-color: #FF900E;
+     padding: 20px;
+     font-size: 1.4rem;
+     border: none;
+     color: white;
+     cursor: pointer;
+
+ }
+
+ main {
+     max-width: 1440px;
+     margin: 70px auto;
+ }
+
+ .team-container {
+     display: flex;
+     align-items: center;
+ }
+
+ .team-img-container {
+     display: grid;
+     grid-template-columns: repeat(2, auto);
+     gap: 1.4rem;
+ }
+
+ .team-description {
+     padding: 0 70px;
+ }
+
+ .team-title {
+     font-size: 45px;
+     font-style: normal;
+     font-weight: 500;
+ }
+
+ .quick-list {
+     color: #727272;
+     font-size: 45px;
+     font-style: normal;
+     font-weight: 500;
+ }
+
+ .of-our {
+     color: #131313;
+     font-size: 45px;
+     font-style: normal;
+     font-weight: 700;
+ }
+
+ .feature {
+     color: #FF900E;
+     font-size: 45px;
+     font-style: normal;
+     font-weight: 700;
+ }
+
+ .team-des {
+     color: var(--dark-03, #727272);
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+ }
+
+
+ @media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav , .team-container {
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: 1fr;
+    }
+
+}
