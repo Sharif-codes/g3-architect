@@ -6,6 +6,32 @@
      font-family: 'Work Sans', sans-serif;
  }
 
+ /* shared style */
+ .btn-primary {
+     border-radius: 5px;
+     background-color: #FF900E;
+     padding: 20px;
+     font-size: 1.4rem;
+     border: none;
+     color: white;
+     cursor: pointer;
+ }
+
+ .paragraph {
+     color: #727272;
+     font-size: 1.2rem;
+     font-style: normal;
+     font-weight: 400;
+ }
+
+ .title {
+     font-size: 2.8rem;
+     font-style: normal;
+     font-weight: 500;
+ }
+
+
+
  header {
      background-color: rgba(255, 144, 14, 0.10);
      padding: 10px 150px;
@@ -48,28 +74,10 @@
      font-weight: 700;
  }
 
- .banner-des {
-     color: #727272;
-     font-size: 1rem;
-     font-style: normal;
-     font-weight: 400;
- }
-
  .banner-content {
      text-align: center;
      max-width: 800px;
      margin: 0 auto;
- }
-
- .btn-primary {
-     border-radius: 5px;
-     background-color: #FF900E;
-     padding: 20px;
-     font-size: 1.4rem;
-     border: none;
-     color: white;
-     cursor: pointer;
-
  }
 
  main {
@@ -90,12 +98,6 @@
 
  .team-description {
      padding: 0 70px;
- }
-
- .team-title {
-     font-size: 45px;
-     font-style: normal;
-     font-weight: 500;
  }
 
  .quick-list {
@@ -126,17 +128,53 @@
      font-weight: 400;
  }
 
+ .fact-title {
+     font-weight: 700;
+ }
+
+ .card-img {
+     border: 1px solid #FF900E;
+     border-radius: 5px;
+     text-align: center;
+     padding:35px;
+ }
+
+ .card-img-container {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .card-stat {
+     color: #424242;
+     font-size: 2.8prem;
+     font-weight: 600;
+     margin-top: 10px;
+ }
+
+ .card-title {
+     color: #727272;
+     font-size: 1.4rem;
+     font-weight: 600;
+     margin-top: 5px;
+ }
+
 
  @media screen and (max-width: 576px) {
-    header {
-        padding: 20px;
-    }
+     header {
+         padding: 20px;
+     }
 
-    nav , .team-container {
-        flex-direction: column;
-    }
-    .team-img-container{
-        grid-template-columns: 1fr;
-    }
+     nav,
+     .team-container , .card-img-container {
+         flex-direction: column;
+     }
 
-}
+     .team-img-container {
+         grid-template-columns: 1fr;
+     }
+     .card-img-container{
+        padding: 10px;
+        gap: 10px;
+     }
+
+ }
